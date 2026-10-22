@@ -1,0 +1,85 @@
+(footprint "Touch Pad"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -3.207 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "83624a32-0b58-481a-b82d-2e5044f4d29e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(property "Value" "Touch Pad"
+		(at 0 -0.667 0)
+		(layer "F.Fab")
+		(uuid "b6fdddf6-b78f-4b38-a6b0-068bd94a0107")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "16d89d8d-36d0-4577-94d2-3df9602c9bb0")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a857d79-e329-4a44-bd8a-e99c197ca5ec")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 0 0)
+		(end 8.5 0)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "1c2b3251-c718-49d1-ad9f-7c5f57212382")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 9 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f20bd2e0-3943-499e-97e4-ba7ac5557881")
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 16 16)
+		(layers "F.Cu")
+		(uuid "751168e3-0c49-4768-b6e4-fc3628cf1a50")
+	)
+	(embedded_fonts no)
+)
