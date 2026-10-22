@@ -1,0 +1,11 @@
+# 8MB Flash 分区表
+# factory 只放引导逻辑（也可直接放主程序），OTA 双分区保证升级失败可回滚
+# nvs 存放药单/库存/事件队列；spiffs 预留给录音与界面资源
+# Name,     Type, SubType, Offset,   Size,     Flags
+nvs,        data, nvs,     0x9000,   0x6000,
+otadata,    data, ota,     0xf000,   0x2000,
+phy_init,   data, phy,     0x11000,  0x1000,
+factory,    app,  factory, 0x20000,  0x180000,
+ota_0,      app,  ota_0,   0x1a0000, 0x180000,
+ota_1,      app,  ota_1,   0x320000, 0x180000,
+spiffs,     data, spiffs,  0x4a0000, 0x360000,

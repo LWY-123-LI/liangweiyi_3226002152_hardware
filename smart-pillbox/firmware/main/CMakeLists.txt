@@ -1,0 +1,32 @@
+# main 组件：core（纯 C，与主机测试共用）+ 硬件适配 + 服务
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "hal_esp.c"
+        "core/pillbox.c"
+        "core/dose_verify.c"
+        "core/schedule.c"
+        "core/stock.c"
+        "storage/nvs_store.c"
+        "services/net.c"
+        "services/ble.c"
+        "services/offline_queue.c"
+        "services/ota.c"
+    INCLUDE_DIRS
+        "."
+        "core"
+        "storage"
+        "services"
+    REQUIRES
+        driver
+        esp_timer
+        esp_event
+        nvs_flash
+        esp_wifi
+        esp_netif
+        mqtt
+        json
+        bt
+        esp_lcd
+        app_update
+)
